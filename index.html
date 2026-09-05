@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eli Marchant — Clockmaker &amp; Horological Restorer, Hebden Bridge</title>
+<meta name="description" content="Eli Marchant restores and builds mechanical clocks by hand from a workshop in Hebden Bridge — longcase restoration, custom skeleton movements, valuations and maintenance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Spectral:ital,wght@0,400;0,500;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<!-- SVG DEFS: reusable gear symbol, referenced throughout the page -->
+<div class="defs-vault" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="gear-icon" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="30" class="gear-body"></circle>
+      <rect x="46" y="0" width="8" height="16" class="gear-tooth"></rect>
+      <rect x="46" y="0" width="8" height="16" class="gear-tooth" transform="rotate(45 50 50)"></rect>
+      <rect x="46" y="0" width="8" height="16" class="gear-tooth" transform="rotate(90 50 50)"></rect>
+      <rect x="46" y="0" width="8" height="16" class="gear-tooth" transform="rotate(135 50 50)"></rect>
+      <rect x="46" y="0" width="8" height="16" class="gear-tooth" transform="rotate(180 50 50)"></rect>
+      <rect x="46" y="0" width="8" height="16" class="gear-tooth" transform="rotate(225 50 50)"></rect>
+      <rect x="46" y="0" width="8" height="16" class="gear-tooth" transform="rotate(270 50 50)"></rect>
+      <rect x="46" y="0" width="8" height="16" class="gear-tooth" transform="rotate(315 50 50)"></rect>
+      <circle cx="50" cy="50" r="10" class="gear-hole"></circle>
+    </symbol>
+  </svg>
+</div>
+
+<!-- HEADER SECTION START -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top">
+      <span class="logo-mark" aria-hidden="true">⏱</span>
+      <span class="logo-text">MARCHANT<br><span class="logo-sub">HOROLOGY</span></span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#craft">Craft</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-clock" aria-hidden="true">
+      <span class="clock-label">WORKSHOP TIME</span>
+      <time id="navClock" class="nav-clock">--:--:--</time>
+    </div>
+
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="ruler" aria-hidden="true"></div>
+</header>
+<!-- HEADER SECTION END -->
+
+<main id="top">
+
+  <!-- HERO SECTION START -->
+  <section class="hero" id="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow">MARCHANT HOROLOGY — EST. 2015</p>
+        <h1>Time, taken apart<br>and put back together,<br>precisely.</h1>
+        <p class="hero-lede">Eli Marchant restores and builds mechanical clocks by hand — from cottage longcase movements to skeletonised showpieces — in a workshop where every tool has its place and every repair is measured twice.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#works">View Selected Works</a>
+          <a class="btn btn-outline" href="#contact">Book A Consultation</a>
+        </div>
+        <dl class="hero-stats">
+          <div><dt>Years at the bench</dt><dd>14</dd></div>
+          <div><dt>Movements restored</dt><dd>200+</dd></div>
+          <div><dt>Regulation standard</dt><dd>±2s / day</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-clock-wrap" data-reveal>
+        <svg class="gear gear--ghost gear--behind-a" viewBox="0 0 100 100"><use href="#gear-icon"></use></svg>
+        <svg class="gear gear--ghost gear--behind-b" viewBox="0 0 100 100"><use href="#gear-icon"></use></svg>
+        <svg class="clock-face" viewBox="0 0 200 200" role="img" aria-label="A live analog clock showing the current time">
+          <circle cx="100" cy="100" r="96" class="clock-rim"></circle>
+          <circle cx="100" cy="100" r="88" class="clock-inner"></circle>
+          <line x1="100" y1="14" x2="100" y2="26" class="tick tick-major" transform="rotate(0 100 100)"></line>
+          <line x1="100" y1="14" x2="100" y2="26" class="tick" transform="rotate(30 100 100)"></line>
+          <line x1="100" y1="14" x2="100" y2="26" class="tick" transform="rotate(60 100 100)"></line>
+          <line x1="100" y1="14" x2="100" y2="26" class="tick tick-major" transform="rotate(90 100 100)"></line>
+          <line x1="100" y1="14" x2="100" y2="26" class="tick" transform="rotate(120 100 100)"></line>
+          <line x1="100" y1="14" x2="100" y2="26" class="tick" transform="rotate(150 100 100)"></line>
+          <line x1="100" y1="14" x2="100" y2="26" class="tick tick-major" transform="rotate(180 100 100)"></line>
+          <line x1="100" y1="14" x2="100" y2="26" class="tick" transform="rotate(210 100 100)"></line>
+          <line x1="100" y1="14" x2="100" y2="26" class="tick" transform="rotate(240 100 100)"></line>
+          <line x1="100" y1="14" x2="100" y2="26" class="tick tick-major" transform="rotate(270 100 100)"></line>
+          <line x1="100" y1="14" x2="100" y2="26" class="tick" transform="rotate(300 100 100)"></line>
+          <line x1="100" y1="14" x2="100" y2="26" class="tick" transform="rotate(330 100 100)"></line>
+          <text x="100" y="46" class="clock-num">12</text>
+          <text x="164" y="106" class="clock-num">3</text>
+          <text x="100" y="168" class="clock-num">6</text>
+          <text x="36" y="106" class="clock-num">9</text>
+          <line id="hourHand" x1="100" y1="100" x2="100" y2="58" class="hand hand-hour"></line>
+          <line id="minuteHand" x1="100" y1="100" x2="100" y2="38" class="hand hand-minute"></line>
+          <line id="secondHand" x1="100" y1="100" x2="100" y2="28" class="hand hand-second"></line>
+          <circle cx="100" cy="100" r="5" class="clock-pin"></circle>
+        </svg>
+        <p class="clock-caption">Set to your device's clock — no two visitors see the same second.</p>
+      </div>
+    </div>
+  </section>
+  <!-- HERO SECTION END -->
+
+  <!-- ABOUT SECTION START -->
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <figure class="portrait" data-reveal>
+        <!-- PORTRAIT IMAGE PLACEHOLDER: replace with assets/img/photo1.jpg — Eli Marchant at the bench -->
+        <div class="portrait-image" role="img" aria-label="Portrait of Eli Marchant at the workbench, surrounded by clock movements and tools"></div>
+        <figcaption>Eli Marchant, at the bench. Hebden Bridge, West Yorkshire.</figcaption>
+      </figure>
+
+      <div class="about-copy" data-reveal>
+        <p class="eyebrow">01 — ABOUT</p>
+        <h2>A bench built on patience</h2>
+        <p>I trained at the British Horological Institute in Upton Hall before spending eight years maintaining turret clocks for parish churches across the Pennines — the kind of work where a fault ignored becomes a fault the whole village hears. In 2015 I opened my own bench above a mill in Hebden Bridge, and I've been there since, splitting my week between restoration commissions and a small run of skeleton clocks built under my own name.</p>
+        <p>Every movement that comes through the door gets stripped to its plates, cleaned by hand, and rebuilt with parts made to match — not replace — what came before. I keep the tools my instructors used, and a few that belonged to theirs.</p>
+        <blockquote class="engraved-quote">A clock doesn't need to be modern to be right. It needs to be true.</blockquote>
+      </div>
+
+      <aside class="principles" data-reveal aria-label="Working principles">
+        <p class="spec-title">WORKING PRINCIPLES</p>
+        <dl class="spec-list">
+          <div class="spec-row"><dt>Accuracy</dt><dd>±2 seconds / day, regulated by hand</dd></div>
+          <div class="spec-row"><dt>Materials</dt><dd>Brass, steel, oak, walnut — UK suppliers where possible</dd></div>
+          <div class="spec-row"><dt>Method</dt><dd>Hand-cut wheels, hand-filed pivots, no ultrasonic shortcuts</dd></div>
+          <div class="spec-row"><dt>Warranty</dt><dd>5-year mechanical guarantee on all restorations</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+  <!-- ABOUT SECTION END -->
+
+  <!-- CRAFT / SERVICES SECTION START -->
+  <section class="services" id="craft">
+    <div class="wrap">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">02 — THE CRAFT</p>
+        <h2>Broken into its parts, like everything else here</h2>
+      </header>
+
+      <div class="parts-grid">
+        <article class="part-card" data-reveal>
+          <p class="part-number">COMPONENT 01</p>
+          <h3>Restoration</h3>
+          <p>Full movement strip-down, cleaning, bushing and regulation for longcase, bracket, mantel and carriage clocks. Cases are treated with equal care — veneer repair, French polishing, and brass re-lacquering where the original finish allows.</p>
+        </article>
+        <article class="part-card" data-reveal>
+          <p class="part-number">COMPONENT 02</p>
+          <h3>Custom Movements</h3>
+          <p>Bespoke skeleton and carriage clocks built to commission. Hand-cut wheels, hand-engraved plates, and a visible escapement if you want the mechanism to be part of the design.</p>
+        </article>
+        <article class="part-card" data-reveal>
+          <p class="part-number">COMPONENT 03</p>
+          <h3>Consultation</h3>
+          <p>Condition reports, valuations and buying advice for auction-bound, inherited or uncertain clocks — an hour on the bench before you commit to a purchase or a repair.</p>
+        </article>
+        <article class="part-card" data-reveal>
+          <p class="part-number">COMPONENT 04</p>
+          <h3>Maintenance</h3>
+          <p>Annual servicing plans that keep a working clock keeping true time: oiling, depthing checks, and a regulation visit timed to the clock, not the calendar.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- CRAFT / SERVICES SECTION END -->
+
+  <!-- WORKS / PORTFOLIO SECTION START -->
+  <section class="portfolio" id="works">
+    <div class="wrap">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">03 — SELECTED WORKS</p>
+        <h2>A few movements that have passed through</h2>
+      </header>
+
+      <div class="works-grid">
+        <article class="work-card" data-reveal>
+          <!-- WORK IMAGE PLACEHOLDER: replace with assets/img/photo2.jpg — restored longcase clock -->
+          <div class="work-image" role="img" aria-label="Restored 1832 Thwaites and Reed longcase clock movement"></div>
+          <p class="work-year">1832 · RESTORED 2022</p>
+          <h3>Thwaites &amp; Reed Longcase</h3>
+          <p class="work-meta">Private collection, Hebden Bridge</p>
+          <p>Eight-day movement, full re-bushing, new mainspring, oak case veneer repair. Returned to ±3 seconds a day after 190 years of service.</p>
+        </article>
+
+        <article class="work-card" data-reveal>
+          <!-- WORK IMAGE PLACEHOLDER: replace with assets/img/photo3.jpg — skeleton mantel clock -->
+          <div class="work-image" role="img" aria-label="Hand engraved skeleton mantel clock with visible escapement"></div>
+          <p class="work-year">OWN DESIGN · 2023</p>
+          <h3>Skeleton Mantel Clock No. 7</h3>
+          <p class="work-meta">Limited run of twelve</p>
+          <p>Brass and steel, hand-engraved plates, visible escapement. Each clock in the run is numbered on the back plate.</p>
+        </article>
+
+        <article class="work-card" data-reveal>
+          <!-- WORK IMAGE PLACEHOLDER: replace with assets/img/photo4.jpg — restored church turret clock mechanism -->
+          <div class="work-image" role="img" aria-label="Restored 1888 turret clock mechanism with cast iron frame"></div>
+          <p class="work-year">1888 · RESTORED 2021</p>
+          <h3>Turret Clock, St. Mary's Parish</h3>
+          <p class="work-meta">Parish church commission</p>
+          <p>Cast-iron frame, flirt-and-fly regulator restored to original specification. Still striking the hour over the churchyard.</p>
+        </article>
+
+        <article class="work-card" data-reveal>
+          <!-- WORK IMAGE PLACEHOLDER: replace with assets/img/photo5.jpg — French carriage clock -->
+          <div class="work-image" role="img" aria-label="Restored French carriage clock circa 1890 with gilded case"></div>
+          <p class="work-year">C.1890 · RESTORED 2023</p>
+          <h3>French Carriage Clock</h3>
+          <p class="work-meta">Family heirloom commission</p>
+          <p>Platform escapement rebuild, replacement mainspring, case re-gilding for a client's grandmother's clock.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- WORKS / PORTFOLIO SECTION END -->
+
+  <!-- PROCESS SECTION START -->
+  <section class="process" id="process">
+    <div class="wrap">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">04 — PROCESS</p>
+        <h2>How a clock leaves this bench</h2>
+      </header>
+
+      <ol class="gear-train">
+        <li class="gear-step" data-reveal>
+          <span class="gear-wrap"><svg class="gear gear--icon" viewBox="0 0 100 100"><use href="#gear-icon"></use></svg><span class="gear-num">1</span></span>
+          <h3>Intake &amp; Assessment</h3>
+          <p>A condition report, photographs, and a conversation about scope and budget before anything is opened.</p>
+        </li>
+        <li class="gear-step" data-reveal>
+          <span class="gear-wrap"><svg class="gear gear--icon" viewBox="0 0 100 100"><use href="#gear-icon"></use></svg><span class="gear-num">2</span></span>
+          <h3>Strip &amp; Clean</h3>
+          <p>Full disassembly and hand cleaning of every component — no ultrasonic shortcuts on movements this old.</p>
+        </li>
+        <li class="gear-step" data-reveal>
+          <span class="gear-wrap"><svg class="gear gear--icon" viewBox="0 0 100 100"><use href="#gear-icon"></use></svg><span class="gear-num">3</span></span>
+          <h3>Repair &amp; Replace</h3>
+          <p>Bushing worn pivots, re-cutting damaged teeth, and replacing only what genuinely can't be saved.</p>
+        </li>
+        <li class="gear-step" data-reveal>
+          <span class="gear-wrap"><svg class="gear gear--icon" viewBox="0 0 100 100"><use href="#gear-icon"></use></svg><span class="gear-num">4</span></span>
+          <h3>Reassemble &amp; Oil</h3>
+          <p>Correct period oils, precise depthing, and careful timing of the whole train before it's closed up.</p>
+        </li>
+        <li class="gear-step" data-reveal>
+          <span class="gear-wrap"><svg class="gear gear--icon" viewBox="0 0 100 100"><use href="#gear-icon"></use></svg><span class="gear-num">5</span></span>
+          <h3>Regulate &amp; Test</h3>
+          <p>A two-week bench test, adjusted until it holds ±2 seconds a day before it goes back to you.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <!-- PROCESS SECTION END -->
+
+  <!-- TESTIMONIALS SECTION START -->
+  <section class="testimonials" id="words">
+    <div class="wrap">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">05 — WORDS</p>
+        <h2>From the other side of the bench</h2>
+      </header>
+
+      <div class="quote-grid">
+        <article class="quote-plate" data-reveal>
+          <p>"Eli found the fault three other clockmakers missed — a hairline crack in the barrel nobody thought to check. The clock has kept perfect time since."</p>
+          <p class="quote-attr">— R. Sandford, Halifax</p>
+        </article>
+        <article class="quote-plate" data-reveal>
+          <p>"Commissioned a skeleton clock for our anniversary. It arrived exactly as discussed, and it's the most talked-about thing in our hallway."</p>
+          <p class="quote-attr">— M. &amp; J. Ainsworth</p>
+        </article>
+        <article class="quote-plate" data-reveal>
+          <p>"Straightforward, unhurried, and honest about what could and couldn't be saved on a clock that had been in three failed repairs before his."</p>
+          <p class="quote-attr">— D. Okafor, Leeds</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- TESTIMONIALS SECTION END -->
+
+  <!-- CONTACT SECTION START -->
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-info" data-reveal>
+        <p class="eyebrow">06 — CONTACT</p>
+        <h2>Bring it to the bench</h2>
+        <p class="contact-lede">Tell me what you have and what's wrong with it — even "I'm not sure" is a fine place to start.</p>
+
+        <div class="spec-plate">
+          <p class="spec-title">WORKSHOP</p>
+          <dl class="spec-list">
+            <div class="spec-row"><dt>Address</dt><dd>Unit 4, Valley Mill, Hebden Bridge, West Yorkshire</dd></div>
+            <div class="spec-row"><dt>Hours</dt><dd>Tuesday–Saturday, 9:00–17:00, by appointment</dd></div>
+            <div class="spec-row"><dt>Email</dt><dd>hello@marchanthorology.co.uk</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <form class="contact-form" data-reveal action="https://yourveryownweb.site/f/pdu9ihsbiufrmkdb" method="POST">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="form-row">
+          <label for="clock-type">Clock type</label>
+          <select id="clock-type" name="clock_type">
+            <option value="">Not sure / other</option>
+            <option value="longcase">Longcase / grandfather</option>
+            <option value="mantel">Mantel or bracket clock</option>
+            <option value="carriage">Carriage clock</option>
+            <option value="skeleton">Skeleton clock (custom)</option>
+            <option value="turret">Turret / tower clock</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <button type="submit" class="btn btn-primary">Send To The Bench</button>
+        <p class="form-note">No fee for enquiries. I read everything myself and reply within a few working days.</p>
+      </form>
+    </div>
+  </section>
+  <!-- CONTACT SECTION END -->
+
+</main>
+
+<!-- FOOTER SECTION START -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="logo-mark" aria-hidden="true">⏱</span>
+      <p>Marchant Horology<br>Unit 4, Valley Mill, Hebden Bridge</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#about">About</a>
+      <a href="#craft">Craft</a>
+      <a href="#works">Works</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="footer-note">© 2024 Eli Marchant Horology. All movements restored by hand.</p>
+  </div>
+  <p class="yvow-credit">Built with help from <a href="https://yourveryownweb.site" rel="noopener">YourVeryOwnWeb.site</a></p>
+</footer>
+<!-- FOOTER SECTION END -->
+
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
